@@ -1,6 +1,6 @@
 # Frontend Mentor - IP address tracker
 
-### *Missão dada é missão comprida. Mais um desafio realizado da plataforma Front-End Mentor.*
+### *Missão dada é missão cumprida. Mais um desafio realizado da plataforma Front-End Mentor.*
 
   
 
