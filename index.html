@@ -1,52 +1,83 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site para rastrear endereços de IP">
+  <meta name="author" content="PedroRocs">
+  <meta name="keywords" content="IP, Busca, Região">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
   <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 
 <body>
-  <header id="cabecalho">
+  <header id="cabecalho" role="heading">
     <h1>IP Adress Tracker</h1>
     <div id="search">
       <input type="text" placeholder="Search for any IP adress of domain">
       <button type="submit">
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
-          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg>
+          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+        </svg>
       </button>
     </div>
   </header>
 
-  
-  <main id="principal">
+
+  <main id="principal" role="main">
     <div id="info-ip">
-      <div id="ip">
+      <div id="ip" role="contentinfo">
         <h2>IP ADRESS</h2>
         <span></span>
       </div>
-      <div id="location">
-        <h2>LOCATION</h2><span></span>
+      <div id="location" role="contentinfo">
+        <h2>LOCATION</h2>
+        <span></span>
       </div>
-      <div id="timezone">
-        <h2>TIMEZONE</h2><span></span>
+      <div id="timezone" role="contentinfo">
+        <h2>TIMEZONE</h2>
+        <span></span>
       </div>
-      <div id="empresa">
-        <h2>INP</h2><span></span>
+      <div id="empresa" role="contentinfo">
+        <h2>INP</h2>
+        <span></span>
       </div>
     </div>
-    <div id="map" ></div>
-  
+    <div id="map" role="navigation"></div>
+
   </main>
+  <footer id="rodape" role="complementary">
+    <h2 role="text">
+      <<span>h2 </span> > Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+          Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/pedrorocs/">PedroRocs</a>. < / <span>h2 </span>>
+    </h2>
+    <div id="img">
+      <a href="https://github.com/PedroRocs" target="_blank">
+        <img src="images/GITHUB-LOGO.png" alt="GITHUB">
+      </a>
+      <a href="https://www.linkedin.com/in/pedrorocs/" target="_blank">
+        <img src="images/Linkedin-símbolo.png" alt="LINKEDIN">
+      </a>
+    </div>
+  </footer>
+
   <script src="js/script.js"></script>
   <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
-</html>git
+</html>
