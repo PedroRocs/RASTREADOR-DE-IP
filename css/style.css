@@ -197,7 +197,7 @@ body::-webkit-scrollbar-thumb {
         width: max-content;
         flex-direction: column;
         justify-content: center;
-        padding: 10px 30px;
+        padding: 10px 10px;
         text-align: center;
         height: auto;
         overflow-x: hidden;
@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
     #info-ip div{
         border-bottom: 1px solid  rgba(0, 0, 0, 0.4);
         border-right: none;
-        padding: 30px;
+        padding: 20px;
     }
 
 
