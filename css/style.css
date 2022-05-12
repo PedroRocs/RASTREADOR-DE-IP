@@ -218,6 +218,6 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width:400px){
     #map{
-        height: 140vh;
+        height: 100vh;
     }
 }
