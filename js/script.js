@@ -20,6 +20,7 @@ function getIP(json) {
 
 // FUNCTION QUE PEGA OS DADOS DA API E RENDERIZA NA TELA
 function geoIP(valor) {
+  
   let url = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${valor}`;
   fetch(url)
     .then((resp) => resp.json())
@@ -49,17 +50,20 @@ function geoIP(valor) {
 
 // FUNCTION QUE RENDERIZA MAPA COM AS COORDENADAS
 function mapa(lat, lng) {
+  console.log(lat,lng)
   if (map == "") {
-    map = L.map("map").setView([lat, lng], 15);
+    map = L.map("map").setView([lat, lng], 10);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {}).addTo(map);
   } 
   else {
     map.removeLayer(mark);
-    map.setView([lat, lng], 13);
+    map.setView([lat, lng], 10);
   }
+  
   mark = L.marker([lat, lng]);
   map.scrollWheelZoom.disable();
   mark.addTo(map).bindPopup("Esse IP esta localizado aqui").openPopup();
+  
 }
 
 // FUNÇÕES PARA BOTÃO DE VOLTAR PARA O TOPO DA TELA
