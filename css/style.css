@@ -1,0 +1,217 @@
+/* ANIMAÇÃO */
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+}
+/*  */
+#cabecalho {
+    height: 330px;
+    width: 100%;
+    background-image: url("/images/pattern-bg.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+#cabecalho h1 {
+    margin-bottom: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 2.3em;
+}
+
+#search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#search input {
+    width: 550px;
+    height: 70px;
+    border-radius: 15px 0 0 15px;
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
+}
+
+#search button {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+#principal {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    animation: 1s animation;
+}
+
+
+#map {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#info-ip {
+    height: auto;
+    width: 80%;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    padding: 40px;
+    margin-top: -70px;
+    border-radius: 15px;
+    z-index: 999;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+#info-ip div {
+    flex-grow: 1;
+    border-right: 1px solid  rgba(0, 0, 0, 0.4);
+}
+
+#info-ip div:nth-child(4){
+    border: none;
+}
+
+#info-ip h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#info-ip span {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+    margin-top: 10px;
+    font-size: 1.4em;
+    display: block;
+}
+
+#rodape {
+    position: relative;
+    bottom: 0;
+    height: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    background-image: url("/images/abstract-minimalist-dark-stripes-px.jpg");
+    background-size: cover;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#rodape span {
+    color: rgb(255, 78, 160);
+}
+
+#img img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#scroll {
+    position: fixed;
+    display: block;
+    padding: 30px;
+    border-radius: 50%;
+    background-color: rgb(78, 100, 221);
+    z-index: 9999;
+    right: 20px;
+    bottom: 50px;
+    cursor: pointer;
+    animation: 1s animation;
+}
+
+#scroll svg {
+    transform: rotate(270deg);
+    width: 11px;
+    height: 13px;
+
+}
+
+
+@media screen and (max-width:1080px) {
+    #info-ip {
+        width: max-content;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 30px;
+        text-align: center;
+        height: auto;
+        overflow-x: hidden;
+        row-gap: 10px;
+    }
+
+    #info-ip div{
+        border-bottom: 1px solid  rgba(0, 0, 0, 0.4);
+        border-right: none;
+        padding: 30px;
+    }
+
+
+    #search input {
+        width: 70%;
+    }
+}
