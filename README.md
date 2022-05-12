@@ -8,7 +8,7 @@
 
   
 
-<p>O desafio era construir um site que rastreei endereços de IP e fazê-lo parecer o mais próximo possível do design fornecido pela plataforma. Para obter as localizações do endereço IP, foi usado a API de geolocalização de IP do IPify . Para gerar o mapa, foi usado LeafletJS .
+<p>O desafio era construir um site que possa rastrear endereços de IP e fazê-lo parecer o mais próximo possível do design fornecido pela plataforma. Para obter as localizações do endereço IP, foi usado a API de geolocalização de IP do IPify . Para gerar o mapa, foi usado LeafletJS .
 
 ## O usuário deve ser capaz de:
 
