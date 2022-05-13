@@ -33,7 +33,7 @@ window.addEventListener("scroll", () => {
   let button = document.createElement("button");
 
   button.classList.add("scroll")
-  button.innerHTML = `<a href="#cabecalho" onclick="click(${button})"><svg xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></a>`;
+  button.innerHTML = `<a href="#cabecalho"><svg xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></a>`;
 
 
   if (scrollY > 300 && document.querySelector(".scroll") == null) {
@@ -48,7 +48,8 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("resize", () => {
   if (screenX > 680) {
-    document.querySelector("#info-ip").style.zIndex = "9999";
+    document.querySelector("#info-ip").style.zIndex = "9999"; 
+      document.querySelector("#info-ip").style.opacity = "100%";
   }
 });
 
