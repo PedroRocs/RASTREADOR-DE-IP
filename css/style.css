@@ -178,14 +178,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .scroll {
+    width: max-content;
+    height: max-content;
     position: fixed;
     display: block;
     padding: 30px;
     border-radius: 50%;
     background-color: rgb(78, 100, 221);
     z-index: 9999;
-    right: 20px;
-    bottom: 50px;
+top: 15%;
+left: 40%;
+right: 40%;
+right: auto;
+    
     cursor: pointer;
     animation: 1s animation;
 

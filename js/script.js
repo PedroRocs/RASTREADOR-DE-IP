@@ -1,5 +1,5 @@
 const ipBody = document.querySelector("#ip span");
-const apiKey = "at_SM7nf8Ww601CicFfwIsuIwIqzobxE";
+const apiKey = "at_pOcNiOF4d3DcBQwrnEe3SR2sNenG3";
 const submit = document.querySelector("#search button");
 const input = document.querySelector("#search input");
 const localizacao = document.querySelector("#location span");
@@ -36,11 +36,9 @@ window.addEventListener("scroll", () => {
   button.innerHTML = `<a href="#cabecalho"><svg xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></a>`;
 
 
-  if (scrollY > 300 && document.querySelector(".scroll") == null) {
+  if (scrollY > 150 && document.querySelector(".scroll") == null) {
     document.querySelector("body").appendChild(button);
-    let scroll = document.querySelector("body .scroll");
-  } else if (scrollY < 300 && document.querySelector(".scroll") != null) {
-
+  } else if (scrollY < 150 && document.querySelector(".scroll") != null) {
     document.querySelector(".scroll").remove();
   }
 });
