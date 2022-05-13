@@ -250,6 +250,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     #map {
-        height: 100vh;
+        height: 60vh;
     }
 }
