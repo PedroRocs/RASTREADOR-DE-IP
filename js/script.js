@@ -1,5 +1,5 @@
 const ipBody = document.querySelector("#ip span");
-const apiKey = "at_pOcNiOF4d3DcBQwrnEe3SR2sNenG3";
+const apiKey = "at_0Pn7Suxf52kXy3JZK5deRsS8VAkxr";
 const submit = document.querySelector("#search button");
 const input = document.querySelector("#search input");
 const localizacao = document.querySelector("#location span");
